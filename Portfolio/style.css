@@ -1,0 +1,295 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #0c0f14;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        .box {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        
+        header {
+            border-bottom: 1px solid #29313d;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logoname {
+            font-size: 26px;
+            font-weight: bold;
+            color: #9fe870;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #9fe870;
+        }
+
+        
+        .hero {
+            min-height: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            padding: 70px 0;
+        }
+
+        .hero-text {
+            max-width: 650px;
+        }
+
+        .subtitle {
+            color: #9fe870;
+            letter-spacing: 3px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 65px);
+            line-height: 1.15;
+            margin: 15px 0;
+        }
+
+        .hero h1 span {
+            color: #9fe870;
+        }
+
+        .hero h2 {
+            font-size: 21px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #a1aaba;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px 8px 5px 0;
+        }
+
+        .btn1 {
+            background: #9fe870;
+            color: #101510;
+        }
+
+        .btn2 {
+            border: 1px solid #444d5b;
+            color: white;
+        }
+
+        .userimg {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 65px;
+          font-weight: bold;
+        }
+
+        .userimg img{
+          width: 250px;
+          height: 250px;
+          border-radius: 50%;
+          border: 5px solid #9fe870;
+        }
+
+      
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+        }
+
+        .section-title p {
+            color: #9fe870;
+            font-size: 12px;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            margin-top: 5px;
+        }
+
+        .aboutme {
+            background: #141922;
+            border: 1px solid #29313d;
+            padding: 30px;
+            border-radius: 12px;
+            color: #c0c7d2;
+        }
+
+        .aboutme p + p {
+            margin-top: 15px;
+        }
+
+       
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .skill-card {
+            background: #141922;
+            border: 1px solid #29313d;
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .skill-card h3 {
+            color: #9fe870;
+            margin-bottom: 10px;
+        }
+
+        .skill-card p {
+            color: #a1aaba;
+            font-size: 14px;
+        }
+
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #141922;
+            border: 1px solid #29313d;
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .project-card h3 {
+            margin: 15px 0 10px;
+        }
+
+        .project-card p {
+            color: #a1aaba;
+            font-size: 14px;
+        }
+
+        .project-number {
+            color: #9fe870;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+
+
+         
+        .contact-box {
+            background: #141922;
+            border: 1px solid #29313d;
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .contact-box p {
+            margin: 12px 0;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-box a {
+            color: #9fe870;
+            text-decoration: none;
+        }
+
+        footer {
+            border-top: 1px solid #29313d;
+            text-align: center;
+            padding: 25px 0;
+            color: #a1aaba;
+            font-size: 14px;
+        }
+
+        
+        @media (max-width: 800px) {
+            .box {
+                width: 90%;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                gap: 30px;
+            }
+
+            .userimg {
+                min-width: 130px;
+                height: 130px;
+                font-size: 40px;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+        }
