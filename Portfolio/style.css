@@ -66,13 +66,6 @@
             max-width: 650px;
         }
 
-        .subtitle {
-            color: #9fe870;
-            letter-spacing: 3px;
-            font-size: 13px;
-            font-weight: bold;
-        }
-
         .hero h1 {
             font-size: clamp(38px, 6vw, 65px);
             line-height: 1.15;
@@ -87,11 +80,6 @@
             font-size: 21px;
             font-weight: normal;
             margin-bottom: 15px;
-        }
-
-        .hero p {
-            color: #a1aaba;
-            margin-bottom: 25px;
         }
 
         .btn {
@@ -135,13 +123,6 @@
 
         .section-title {
             margin-bottom: 30px;
-        }
-
-        .section-title p {
-            color: #9fe870;
-            font-size: 12px;
-            letter-spacing: 3px;
-            font-weight: bold;
         }
 
         .section-title h2 {
